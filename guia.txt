@@ -1,0 +1,73 @@
+El centro médico CampusMd desea crear un programa que permita gestionar la información
+de un centro veterinario, incluyendo la gestión de pacientes, veterinarios y citas médicas.
+El programa deberá almacenar la información en archivos JSON y utilizar módulos
+definidos por el usuario.
+
+Se debe generar el menú de opciones para la gestión de veterinarios y citas médicas.
+Gestión de veterinarios
+1. Agregar veterinario
+2. Buscar veterinario
+3. Mostrar información de un veterinario
+4. Volver al menú principal
+Gestión de citas
+1. Crear cita
+2. Cancelar cita
+3. Consultar citas por fecha
+4. Consultar citas por veterinario
+5. Volver al menú principal
+La información que se debe tener en cuenta para los veterinarios es la siguiente:
+a. Id Veterinario
+b. Nombres
+c. Título profesional
+
+d. Fecha de registro
+Información de citas médicas:
+a. Id cita: Este valor se debe generar de forma automática.
+b. Fecha cita
+c. Hora cita: Se debe verificar que se tenga disponibilidad para el día y la hora.
+d. Veterinario: Se debe guardar el id y el nombre del veterinario responsable de la cita. La
+información del nombre del veterinario se debe cargar automáticamente al momento
+de ingresar el id del veterinario.
+e. Id paciente
+Información del paciente:
+a. Id: Este valor se debe generar de forma automática.
+b. Nombre paciente
+c. Raza: El usuario debe seleccionar una raza de un menú de selección. La raza dependerá
+del tipo de animal.
+d. Edad: Se debe validar el tipo de dato entero.
+e. Nombre propietario
+f. Tipo : Perro, Gato, Reptil, Ave
+
+TIPS DE SOLUCION
+
+Funcionalidades del programa:
+1. Gestión de pacientes:
+• Agregar nuevos pacientes con su información básica (nombre,
+especie, raza, edad, etc.).
+• Buscar pacientes por nombre o especie.
+• Mostrar la información completa de un paciente, incluyendo su
+historial médico.
+2. Gestión de veterinarios:
+• Agregar nuevos veterinarios con su información básica (nombre,
+especialidad, número de teléfono, etc.).
+• Buscar veterinarios por nombre o especialidad.
+• Mostrar la información completa de un veterinario, incluyendo su
+horario de trabajo.
+3. Gestión de citas médicas:
+• Agendar nuevas citas médicas, asignando un paciente y un
+veterinario disponibles.
+• Buscar citas por fecha, paciente o veterinario.
+• Mostrar la información completa de una cita médica, incluyendo
+detalles del paciente y el veterinario asignado.
+
+4. Guardar la información en archivos JSON:
+• Al agregar nuevos pacientes, veterinarios o citas, se deben guardar
+los datos en archivos JSON correspondientes.
+
+• Al iniciar el programa, se deben cargar los datos almacenados en
+los archivos JSON.
+
+Recuerda completar las funciones faltantes para la gestión de veterinarios, citas médicas
+y la carga/guardado de datos en archivos JSON. También puedes agregar validaciones de
+entrada, como verificar que no se repitan nombres de pacientes o veterinarios, y agregar
+más funcionalidades según tus necesidades específicas
