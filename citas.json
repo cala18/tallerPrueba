@@ -1,0 +1,20 @@
+[
+    {
+        "citaId": 666,
+        "citaFecha": "2023-07-14",
+        "citaHora": 7,
+        "veterinario": "b"
+    },
+    {
+        "citaId": 24,
+        "citaFecha": "2023-07-14",
+        "citaHora": 4,
+        "veterinario": "t"
+    },
+    {
+        "citaId": 887,
+        "citaFecha": "2023-07-14",
+        "citaHora": 5,
+        "veterinario": "h"
+    }
+]

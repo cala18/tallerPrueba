@@ -1,14 +1,27 @@
+import json
+import random
+from datetime import datetime
+import os
 
+asigCitas = []
+def cargarasigCitas():
+    if os.path.exists('Citas.json'):
+        with open('Citas.json', 'r') as cala:
+            asigCitas.extend(json.load(cala))
+def crear_cita():
+    citaId = random.randint(1, 1000)
+    citaFecha = datetime.now().strftime('%Y-%m-%d')
+    citaHora = int(input('Ingrese la hora de la cita: '))
+    veterinario = input('Ingrese el nombre del veterinario: ')
 
+    asigCitas.append({
+        'citaId': citaId,
+        'citaFecha': citaFecha,
+        'citaHora': citaHora,
+        'veterinario': veterinario
+    })
 
-if (opcion == 1):
-    
-        print('1. agregar veterinario')
-elif(opcion == 2):
-        print('2. buscar veterinario ')
-elif(opcion == 3):
-        print('3. mostar imformacion del veterinario')
-elif(opcion == 4):
-        print('4. volver al menur principal')
-else:
-        print('el numero que has ingresado no es valido')
+    with open('citas.json', 'w') as cala:
+        json.dump(asigCitas, cala, indent=4)
+cargarasigCitas()
+crear_cita()
